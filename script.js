@@ -63,7 +63,7 @@ function affichageTacheEcran(listeTaches){
 }
 function agrandirTache(index){
     const tache = listeTaches[index];
-    document.body.innerHTML += `<div class="grand grand-${index}">
+    document.querySelector('.g').innerHTML += `<div class="grand grand-${index}">
         <div id="boutton-fermer"><button class="fermer fermerTache-${index}">X</button></div>
         <span class="titreTache t">${tache.titreEvent}</span>
         <span class="dateTache t">Date de l'évènement :  <br>${tache.dateEvent}</span>
