@@ -1,0 +1,306 @@
+@font-face {
+    font-family:'Kufam-Regular' ;
+    src: url(fonts/Kufam-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+
+/* body  */
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0%;
+    font-family: 'Montserrat-Regular';
+    display: flex;
+    flex-direction: column;
+}
+/* fin  */
+
+/* navigation */
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav span {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+/* fin  */
+
+/* conteneur de la liste des taches  */
+.principal{
+    min-height: 400px;
+    width: 100%;
+
+}
+/* fin  */
+
+/* boutton ajouter taches  */
+.add-event{
+    width: 100px;
+    border: 2px solid black;
+    background-color: black;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-family: 'Montserrat-Regular';
+}
+.add-event:hover{
+    background-color: white;
+    color: black;
+}
+/* fin  */
+
+/* div du bloc ajout */
+.div-ajout{
+    display: none;
+}
+
+.div-ajt{
+    width: 600px;
+    height: 450px;
+    border-radius: 20px 0 20px 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+/* fin du div bloc ajt */
+
+
+/* le filtre flou  */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    color: white;
+    display: none; /* Masqué par défaut */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-overlayed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* fin  */
+
+/* haut du formulaire */
+#boutton-fermer{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+.fermer{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat-Regular';
+}
+#fermer:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+#span-event{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#span-event span{
+    font-size: 30px;
+}
+/* fin */
+
+/* le form et ses champ */
+#div-form{
+    height: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+textarea {
+    resize: none;
+    margin-top: 5px;
+    border: 2px solid black;
+}
+.form{
+    width: 240px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 5px;
+}
+/* fin du form  */
+
+/* bouton submit */
+.form-sub{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat-Regular';
+}
+.form-sub:hover{
+    background-color: white;
+    color: black;
+}
+/* fin bouton submit */
+
+/* les taches qui s'affichent */
+.more {
+    height: 120px;
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 22px;
+    margin-top: 10px;
+    justify-content: space-between;
+    float: left;
+}
+.more button {
+    background-color: red;
+    color: white;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid red;
+    width: 30%; 
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+.more button:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid black;
+}
+.more p{
+    font-weight: bold;
+    font-size: 15px;
+    margin: 15px 10px;
+    text-align: center;
+}
+/* fin  */
+
+
+/* bouton tout supp et son container  */
+.tout-sup {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-family: 'Montserrat-Regular';
+}
+
+.tout-sup:hover {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+}
+
+.b {
+    height: 50px;
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+/* fin  */
+
+/* tache aggrandie  */
+.grand{
+    width: 600px;
+    height: 500px;
+    border-radius: 20px 0 20px 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.grand span, .grand p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.titreTache{
+    font-size: 30px;
+}
+#hours{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around
+}
+.para{
+    border: 1px solid grey;
+    width: 80%;
+    height: 200px;
+}
+/* fin  */
+
+.diparaitre{
+    display: none;
+}

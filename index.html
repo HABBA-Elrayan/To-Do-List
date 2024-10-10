@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <nav><span>elrayan.</span></nav>
+    <div class="principal">
+    </div>
+    
+    <div class="b">
+        <button class="add-event">Ajouter</button>
+        <button class="tout-sup">Tout Supprimer</button>
+    </div>
+    <div class="div-ajout">
+        <div id="boutton-fermer"><button class="fermer">X</button></div>
+        <div id="span-event"><span>Ajoutez votre évènement</span></div>
+        <form id="div-form">
+            <input id="titre" class="form" type="text" placeholder="Titre" maxlength="60" name="titre" required="required">
+            <input id="hd" class="form"  type="time" name="heureD">
+            <input id="hf" class="form" type="time" name="heureF">
+            <input id="date" class="form" type="date" required="required" name="date">
+            <textarea id="desc" placeholder="Description" rows="4" cols="30" maxlength="400" name="desc"></textarea>
+            <input class="form form-sub" type="submit">
+        </form>
+    </div>
+
+    <div class="menu-overlay"></div> <!--  permet de mettre le flou -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
